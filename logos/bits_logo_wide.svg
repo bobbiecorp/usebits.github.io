@@ -1,8 +1,11 @@
-<svg width="213" height="180" viewBox="55 10 170 180" xmlns="http://www.w3.org/2000/svg">
+<svg width="2130" height="1200" viewBox="0 0 426 240" xmlns="http://www.w3.org/2000/svg">
   <style>
     :root { --dot-radius: 5; }
     .dots circle { r: var(--dot-radius); }
   </style>
+
+  <!-- White background -->
+  <rect width="426" height="240" fill="white"/>
 
   <!-- Square logo scaled to fill vertical space (120 -> 220, centered) -->
   <g transform="translate(61, -31) scale(2.5)">
