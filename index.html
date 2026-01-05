@@ -5,35 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bits</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function initApollo() {
+        var n = Math.random().toString(36).substring(7),
+          o = document.createElement("script");
+        ((o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n),
+          (o.async = !0),
+          (o.defer = !0),
+          (o.onload = function () {
+            window.trackingFunctions.onLoad({
+              appId: "6947089195d342001d07916b",
+            });
+          }),
+          document.head.appendChild(o));
+      }
+      initApollo();
+    </script>
   </head>
   <body class="bg-white text-gray-900">
     <div class="max-w-2xl mx-auto px-6 py-16">
       <!-- Header -->
       <header class="mb-8">
         <img src="logos/bits_logo_v0.svg" alt="Bits" class="h-[4.5rem] mb-6 mx-auto" />
-        <p class="text-xl text-gray-800 mb-4">Bring AI to all your webapps</p>
+        <p class="text-xl text-gray-800 mb-4">Bring AI To All Your WebApps</p>
         <p class="text-gray-600">
-          Say goodbye to integrating all of your services manually using API calls and keys. 
-          Bittie's authentication is enterprise-ready - using Okta, Google, or 1password, or any other SSO. 
-          Bittie uses the browser just like you, interacting with webapps visually and taking actions
-          intelligently.
+          Say goodbye to integrating all of your services manually using API calls and keys.
+          Bittie's authentication is enterprise-ready - using Okta, Google, or 1Password, or any
+          other SSO. Bittie uses the browser just like you, interacting with webapps visually and
+          taking actions intelligently.
         </p>
       </header>
 
+      <!-- YC Badge -->
+      <div class="mb-8 flex items-center gap-2 text-gray-500 text-sm">
+        <span>Backed by</span>
+        <img src="yc-logo.svg" alt="Y Combinator" class="w-6 h-6" />
+        <span>Y Combinator</span>
+      </div>
+
       <!-- Use Cases -->
       <section class="mb-8">
-        <h2 class="text-lg font-medium mb-2">Use cases</h2>
+        <h2 class="text-lg font-medium mb-2">Use Cases</h2>
         <ul class="space-y-1 text-gray-600">
           <li>
-            <span class="font-medium text-gray-900">Workflow automation</span>
+            <span class="font-medium text-gray-900">Workflow Automation</span>
             — Automate repetitive tasks like user provisioning and CRM updates.
           </li>
           <li>
-            <span class="font-medium text-gray-900">Data extraction</span>
+            <span class="font-medium text-gray-900">Data Extraction</span>
             — Scrape dashboards and reports. Get alerted about important changes.
           </li>
           <li>
-            <span class="font-medium text-gray-900">Testing & monitoring</span>
+            <span class="font-medium text-gray-900">Testing & Monitoring</span>
             — Run authenticated e2e tests and uptime checks without credential headaches.
           </li>
         </ul>
@@ -42,11 +65,27 @@
       <!-- Contact -->
       <section class="mb-12">
         <p class="text-gray-600">
-          Founders: <a href="https://www.linkedin.com/in/bailey-w-10b01a345/" class="underline hover:text-gray-900">Bailey Wickham</a> and <a href="https://www.linkedin.com/in/robert-thompson-133469175/" class="underline hover:text-gray-900">Robbie Thompson</a>
+          Founders:
+          <a
+            href="https://www.linkedin.com/in/bailey-w-10b01a345/"
+            class="underline hover:text-gray-900"
+          >
+            Bailey Wickham
+          </a>
+          and
+          <a
+            href="https://www.linkedin.com/in/robert-thompson-133469175/"
+            class="underline hover:text-gray-900"
+          >
+            Robbie Thompson
+          </a>
         </p>
         <p class="text-gray-600 mt-2">
           Reach us at
-          <a href="mailto:founders@usebits.com" class="underline hover:text-gray-900">founders@usebits.com</a>.
+          <a href="mailto:founders@usebits.com" class="underline hover:text-gray-900">
+            founders@usebits.com
+          </a>
+          .
         </p>
       </section>
 
@@ -66,15 +105,5 @@
         <p class="text-sm text-gray-500">&copy; 2026 Bits</p>
       </footer>
     </div>
-
-    <!-- YC Badge -->
-    <a
-      href="https://bookface.ycombinator.com/company/31084"
-      class="fixed bottom-4 right-4 flex items-center gap-2 text-gray-500 hover:text-gray-700 text-sm bg-white/80 backdrop-blur px-3 py-2 rounded-lg shadow-sm transition-colors"
-    >
-      <span>Backed by</span>
-      <img src="yc-logo.svg" alt="Y Combinator" class="w-6 h-6" />
-      <span>Y Combinator</span>
-    </a>
   </body>
 </html>
