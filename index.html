@@ -1,5 +1,4 @@
 <!doctype html>
-<!-- cache bust -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,18 +27,7 @@
     <div class="max-w-2xl mx-auto px-6 py-16">
       <!-- Header -->
       <header class="mb-8">
-        <img src="logos/bits_logo_v0.svg" alt="Bits" class="h-[4.5rem] mb-4 mx-auto" />
-        <!-- YC Badge -->
-        <div class="mb-6 flex justify-center">
-          <a
-            href="https://www.ycombinator.com/"
-            class="flex items-center gap-2 text-gray-500 hover:text-gray-700 text-sm transition-colors"
-          >
-            <span>Backed by</span>
-            <img src="yc-logo.svg" alt="Y Combinator" class="w-6 h-6" />
-            <span>Y Combinator</span>
-          </a>
-        </div>
+        <img src="logos/bits_logo_v0.svg" alt="Bits" class="h-[4.5rem] mb-6 mx-auto" />
         <p class="text-xl text-gray-800 mb-4">Bring AI To All Your WebApps</p>
         <p class="text-gray-600">
           Say goodbye to integrating all of your services manually using API calls and keys.
@@ -111,5 +99,15 @@
         <p class="text-sm text-gray-500">&copy; 2026 Bits</p>
       </footer>
     </div>
+
+    <!-- YC Badge -->
+    <a
+      href="https://www.ycombinator.com/"
+      class="fixed bottom-4 right-4 flex items-center gap-2 text-gray-500 hover:text-gray-700 text-sm bg-white/80 backdrop-blur px-3 py-2 rounded-lg shadow-sm transition-colors"
+    >
+      <span>Backed by</span>
+      <img src="yc-logo.svg" alt="Y Combinator" class="w-6 h-6" />
+      <span>Y Combinator</span>
+    </a>
   </body>
 </html>
